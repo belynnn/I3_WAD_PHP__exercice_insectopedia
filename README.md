@@ -1,8 +1,8 @@
 # Interface3
-# Formation Web Application Developer
-# PHP - Projet Insectopedia
+## Formation Web Application Developer
+### PHP - Projet Insectopedia
 
-## ○ Légende
+#### ○ Légende
 * 🟥 À faire
 * 🟧 Initialisé
 * 🟨 En cours
@@ -11,8 +11,8 @@
 
 
 
-## ○ TO DO
-* ### 🟨 Gérer les includes
+#### ○ TO DO
+* ##### 🟨 Gérer les includes
     * 🔜 Créer le fichier ./includes/doctype.php
     * 🔜 Créer le fichier ./includes/head.php
     * 🟨 Créer le fichier ./includes/nav.php
@@ -20,10 +20,10 @@
     * 🔜 Créer le fichier ./includes/script.php
     * 🟧 Créer le fichier ./includes/footer.php
 
-* ### 🟨 Gérer la connexion à la base de données
+* ##### 🟨 Gérer la connexion à la base de données
     * 🔜 Créer le fichier ./database/config.php
 
-* ### 🟨 Créer la fonctionnalité d'inscription
+* ##### 🟨 Créer la fonctionnalité d'inscription
     * 🔜 Créer le fichier ./inscriptions/inscription.php
         * Formulaire
             * Pseudo
@@ -52,24 +52,24 @@
         * 1️⃣0️⃣. Exécuter la requête
         * 1️⃣1️⃣. Envoyer l'utilisateurice à la page de connexion
 
-* ### 🟨 Créer la fonctionnalité de session
+* ##### 🟨 Créer la fonctionnalité de session
     * 🟨 Créer le fichier ./sessions/checkSession.php
     * 🟨 Créer le fichier ./sessions/login.php
     * 🟨 Créer le fichier ./sessions/loginTraitement.php
     * 🟧 Créer le fichier ./sessions/logout.php
 
-* ### • 🟥 Créer la page de détail des insectes
+* ##### • 🟥 Créer la page de détail des insectes
     * 🟥 Créer le fichier .detailInsecte.php
 
-* ### • 🟨 Créer la fonctionnalité de Recherche
+* ##### • 🟨 Créer la fonctionnalité de Recherche
     * 🟧 Créer le fichier ./recherches/insecteRecherche.js
     * 🟧 Créer le fichier ./recherches/insecteRechercheAjax.php
     * 🟧 Créer le fichier ./recherches/insecteRechercheAjaxTraitement.php
 
-* ### • 🟨 Créer la fonctionnalité d'insertion d'insectes
+* ##### • 🟨 Créer la fonctionnalité d'insertion d'insectes
     * 🟧 Créer le fichier ./insertions/insecteInserer.php
     * 🟧 Créer le fichier ./insertions/insecteInsererTraitement.php
 
-* ### • 🟥 Créer la fonctionnalité d'insertion de photo d'observations
+* ##### • 🟥 Créer la fonctionnalité d'insertion de photo d'observations
 
-* ### • 🟥 Créer la fonctionnalité de notation des observations des utilisateurices
+* ##### • 🟥 Créer la fonctionnalité de notation des observations des utilisateurices
