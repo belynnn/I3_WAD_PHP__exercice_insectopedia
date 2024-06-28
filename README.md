@@ -31,26 +31,32 @@
             * Mot de passe
             * Image de profil
 
-    * 🔜 Créer le fichier ./inscriptions/inscriptionTraitement.php
-        * Récuperer les données du formulaire d'inscription
-        * Se connecter à la base de données -> prévoir un include
-            * Essayer de connecter
-            * Problème de connexion
-        * Créer la requête pour chercher un utilisateurice qui possède l'adresse mail qui a été inscrit dans le formulaire
-        * Préparer la requête
-        * Spécifier à quoi est rattaché la colonne mail (ici, les valeurs récupérées par le formulaire en requête POST ayant été encapsulée dans les variables $mail)
-        * Executer la requête
-        * Obtenir le résultat et le mettre dans un array
+    * 🟨 Créer le fichier ./inscriptions/inscriptionTraitement.php
+        * 🔜 Récuperer les données du formulaire d'inscription
+        * 🔜 Se connecter à la base de données 
+            * 🟥 Prévoir un include
+                * Essayer de connecter
+                * Problème de connexion
+        * 🔜 Créer la requête pour chercher un utilisateurice qui possède l'adresse mail qui a été inscrit dans le formulaire
+        * 🔜 Préparer la requête
+            * 🟥 Prévoir un include
+        * 🔜 Spécifier à quoi est rattaché la colonne mail (ici, les valeurs récupérées par le formulaire en requête POST ayant été encapsulée dans les variables $mail)
+        * 🔜 Executer la requête
+            * 🟥 Prévoir un include
+        * 🔜 Obtenir le résultat et le mettre dans un array
             * L'adresse mail est déjà prise
-        * Créer la requête d'insertion (string)
-            * Préparer la requête d'insertion
-            * Spécifier à quoi sont rattaché les colonnes pseudo et mail (ici, les valeurs récupérées par le formulaire en requête POST ayant été encapsulée dans les variables $pseudo & $mail)
-        * Crypter le mot de passe de l'utilisateurice avant d'exécuter la requête
-            * Spécifier à quoi est rattaché la colonne password (ici, la valeur récupérée par le formulaire en requête POST ayant été encapsulée dans la variable $password, puis ayant été cryptée par la fonction password_hash() qui a été encapsulée dans la variable $passwordHash)
-            * Spécifier à quoi est rattaché la colonne image (ici, la valeur récupérée par le formulaire en requête POST ayant été encapsulée dans la variable $image)
+                * 🟥 Prévoir un include
+        * 🔜 Créer la requête d'insertion (string)
+            * 🔜 Préparer la requête d'insertion
+                * 🟥 Prévoir un include
+            * 🔜 Spécifier à quoi sont rattaché les colonnes pseudo et mail (ici, les valeurs récupérées par le formulaire en requête POST ayant été encapsulée dans les variables $pseudo & $mail)
+        * 🔜 Crypter le mot de passe de l'utilisateurice avant d'exécuter la requête
+            * 🔜 Spécifier à quoi est rattaché la colonne password (ici, la valeur récupérée par le formulaire en requête POST ayant été encapsulée dans la variable $password, puis ayant été cryptée par la fonction password_hash() qui a été encapsulée dans la variable $passwordHash)
+            * 🔜 Spécifier à quoi est rattaché la colonne image (ici, la valeur récupérée par le formulaire en requête POST ayant été encapsulée dans la variable $image)
                 * 🟥 Gérer le HASH des image de profil des utilisateurices lors de l'inscription
-        * Exécuter la requête
-        * Envoyer l'utilisateurice à la page de connexion
+        * 🔜 Exécuter la requête
+            * 🟥 Prévoir un include
+        * 🔜 Envoyer l'utilisateurice à la page de connexion
 
 * ##### 🟨 Créer la fonctionnalité de session
     * 🟨 Créer le fichier ./sessions/checkSession.php
