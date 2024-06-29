@@ -1,17 +1,17 @@
 <?php
-    include '../includes/doctype.php';
+    include("../includes/doctype.php");
 ?>
 
 <head>
     <?php
-        include './includes/head.php';
+        include("./includes/head.php");
     ?>
 </head>
 
 <body>
     <header>
         <?php
-            include './includes/nav.php';
+            include("./includes/nav.php");
         ?>
     </header>
 
@@ -25,7 +25,7 @@
         $password = $_POST['password'];
 
         // 3️⃣. Se connecter à la base de données
-        include "../database/config.php";
+        include("../database/config.php");
 
         try {
             // 3️⃣.1️⃣. Essayer de se connecter
@@ -56,15 +56,15 @@
         $arrayUtilisateurices = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // 9️⃣. Si l'utilisateurice n'existe pas on arrete le script et on lui propose de s'inscrire
-        if (empty ($arrayUtilisateurices)){
-            print ("Le compte auquel vous souhaitez accéder n'existe pas.<br>");
-            print ("<a href='../inscriptions/inscription.php'>S'enregistrer</a>");
+        if (empty($arrayUtilisateurices)){
+            print("Le compte auquel vous souhaitez accéder n'existe pas.<br>");
+            print("<a href='../inscriptions/inscription.php'>S'enregistrer</a>");
 
             die ();
         }
 
         // 1️⃣0️⃣. Afficher les données de la manière choisie
-        var_dump ($arrayUtilisateurices);
+        var_dump($arrayUtilisateurices);
 
         // 1️⃣1️⃣. Obtenir le mot de passe de l'utilisateuriceice
         $passwordHashBD = $arrayUtilisateurices[0]['password'];
@@ -75,7 +75,7 @@
         // 1️⃣3️⃣. Vérifier si le mot de passe entré est bon
         if (password_verify($password, $passwordHashBD) == false){
             // 1️⃣3️⃣.1️⃣. Le password n'est pas bon!
-            print ("Compte et/ou mot de passe incorrectes.");
+            print("Compte et/ou mot de passe incorrectes.");
 
             die();
         }
@@ -83,13 +83,13 @@
             // 1️⃣3️⃣.2️⃣. Le password est ok!
             $_SESSION['nomUtilisateurice'] = $nomUtilisateurice;
     
-            header ("location: ../sessions/login.php");
+            header("location: ../index.php");
         }
         ?>
     </main>
 
     <?php
-        include '../includes/script.php';
+        include("../includes/script.php");
     ?>
 </body>
 </html>

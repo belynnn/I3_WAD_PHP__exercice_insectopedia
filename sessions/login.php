@@ -1,14 +1,20 @@
 <?php
-    include '../includes/doctype.php';
+    include("../includes/doctype.php");
 ?>
 
 <head>
     <?php
-        include '../includes/head.php';
+        include("../includes/head.php");
     ?>
 </head>
 
 <body>
+    <header>
+        <?php
+            include("../includes/nav.php");
+        ?>
+    </header>
+
     <main>
         <form action="./loginTraitement.php" method="POST">
             <div>
@@ -22,10 +28,12 @@
             </div>
             <input type="submit" value="Se connecter">
         </form>
+
+        <p>Pas encore membre ? <a href="../inscriptions/inscription.php">Inscris-toi !</a></p>
     </main>
 
     <?php
-        include '../includes/script.php';
+        include("../includes/script.php");
     ?>
 </body>
 </html>

@@ -3,7 +3,7 @@
     $termeRecherche = $_POST['termeRecherche'];
 
     // 2️⃣. Se connecter à la base de données
-    include "./database/config.php";
+    include("./database/config.php");
 
     // 3️⃣. try catch
     try {
@@ -36,7 +36,7 @@
     $arrayInsectes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // 9️⃣. Encoder le tableau contenant les insectes en JSON
-    $tableauJSON = json_encode($arrayFilm);
+    $tableauJSON = json_encode($arrayInsectes);
 
     // 1️⃣0️⃣.Afficher le tableau contenant les insectes ayant été encodé en JSON
     print($tableauJSON);

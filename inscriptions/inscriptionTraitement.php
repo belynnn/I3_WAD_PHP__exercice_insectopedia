@@ -1,10 +1,10 @@
 <?php
-    include '../includes/doctype.php';
+    include("../includes/doctype.php");
 ?>
 
 <head>
     <?php
-        include '../includes/head.php';
+        include("../includes/head.php");
     ?>
 </head>
 
@@ -19,7 +19,7 @@
     
     
         // 2️⃣. Se connecter à la base de données
-        include '../database/config.php';
+        include("../database/config.php");
     
         try {
             // 2️⃣.1️⃣. Essayer de connecter
@@ -52,8 +52,8 @@
         
         // 7️⃣.1️⃣. L'adresse mail est déjà prise
         if (!empty ($arrayUtilisateurices)){
-            print ("Cette addresse mail est déjà utilisée.<br>");
-            print ("<a href='../index.php'>Retourner à l'inscription</a>");
+            print("Cette addresse mail est déjà utilisée.<br>");
+            print("<a href='../inscriptions/inscription.php'>Retourner à l'inscription</a>");
 
             die();
         }
@@ -81,12 +81,12 @@
         $stmt->execute();
 
         // 1️⃣1️⃣. Envoyer l'utilisateurice à la page de connexion
-        header ("location: ../sessions/login.php");
+        header("location: ../sessions/login.php");
         ?>
     </main>
     
     <?php
-        include '../includes/script.php';
+        include("../includes/script.php");
     ?>
 </body>
 </html>

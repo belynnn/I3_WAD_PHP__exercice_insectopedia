@@ -1,25 +1,22 @@
 <?php
-    include '../includes/doctype.php';
+    include("../includes/doctype.php");
 ?>
 
 <head>
     <?php
-        include '../includes/head.php';
+        include("../includes/head.php");
     ?>
 </head>>
 
 <body>
     <main>
         <?php
-            include "../sessions/checkSession.php";
-            include "../includes/nav.php";
+            include("../sessions/checkSession.php");
+            include("../includes/nav.php");
         ?>
         <h1>Page d'insertion</h1>
     
         <?php
-            var_dump($_POST);
-            var_dump($_FILES);
-        
             // 🔴 start upload fichier
             // 1️⃣. Créer un nom unique pour le fichier
             $dossier = "../uploads/img_insertions_insectes";
@@ -46,7 +43,7 @@
             $genre = $_POST['genre'];
         
             // 4️⃣. Connecter à la BD (PDO)
-            include "../database/config.php";
+            include("../database/config.php");
         
             // 5️⃣. try catch
             try {
@@ -86,17 +83,20 @@
         
             // 9️⃣. Lancer la requête
             $stmt->execute();
+
+            // 10. Insertion ok
+            print ("<br><br><br><br>Votre formulaire a bien été reçu et les données ont bien été enregistrées.");
         ?>
     </main>
 
     <footer>
         <?php
-            include '../includes/footer.php';
+            include("../includes/footer.php");
         ?>
     </footer>
 
     <?php
-        include '../includes/script.php';
+        include("../includes/script.php");
     ?>
 </body>
 </html>

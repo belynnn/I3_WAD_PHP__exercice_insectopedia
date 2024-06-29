@@ -1,0 +1,90 @@
+.body-logout{
+    text-align: center;
+}
+
+header{
+    padding: 3em;
+}
+
+.logo-insectopedia{
+    width: 75px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo>img{
+    width: 300px;
+}
+
+.aa{
+    color: rgb(18, 135, 55);
+    font-weight: 600;
+}
+
+.bb{
+    color: rgb(20, 90, 42);
+    font-size: 1.2em;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 150px;
+}
+
+footer{
+    background-color: rgb(20, 90, 42);
+    color: #fff;
+    margin-top: 3em;
+    padding-block: 2em;
+}
+
+footer>div:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 1em;
+}
+
+/* logo footer */
+footer>div>div>div:first-of-type{
+    text-align: center;
+}
+
+/* texte Insectopedia */
+footer>div>div>div:last-of-type>p{
+    width: 300px;
+    text-align: justify;
+    margin-top: 1em;
+}
+
+/* titre column footer */
+footer>div>div>h5{
+    padding-top: .5em;
+    text-align: center;
+}
+/* réinitialiser margin padding car list style none */
+footer>div>div>ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* copy */
+footer>div:last-of-type{
+    text-align: center;
+}
+
+footer a{
+    color: #c3eec3;
+}
+footer a:hover{
+    color: #e4f3e4;
+}
+footer a:visited{
+    color: #c3eec3;
+}

@@ -1,18 +1,17 @@
 <?php
-    include '../includes/doctype.php';
+    include("../includes/doctype.php");
 ?>
 
 <head>
     <?php
-        include '../includes/head.php';
+        include("../includes/head.php");
     ?>
 </head>
 
 <body>
     <header>
         <?php
-            include "../sessions/checkSession.php";
-            include '../includes/nav.php';
+            include("../includes/nav.php");
         ?>
     </header>
 
@@ -45,7 +44,7 @@
     </main>
 
     <?php
-        include '../includes/script.php';
+        include("../includes/script.php");
     ?>
 </body>
 </html>
