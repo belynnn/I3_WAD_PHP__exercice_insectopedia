@@ -16,6 +16,8 @@
     </header>
 
     <main>
+        <p>Vous devez être connecté pour naviguer sur le site.</p>
+
         <form action="./loginTraitement.php" method="POST">
             <div>
                 <label for="mail">Adresse mail :</label>

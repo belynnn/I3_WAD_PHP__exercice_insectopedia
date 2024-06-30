@@ -9,9 +9,13 @@
 </head>
 
 <body>
-    <header>
+    <header class="m-5 p-5">
         <?php
-            include("../sessions/checkSession.php");
+            session_start();
+            if (empty($_SESSION['nomUtilisateurice'])) {
+                
+                header("location: ../sessions/login.php");
+            }
             include("../includes/nav.php");
         ?>
     </header>

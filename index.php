@@ -22,7 +22,7 @@
 
         <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.php"><img class="logo-insectopedia" src="./assets/img/logo/black/insectopedia-high-resolution-logo-black-transparent.png" alt=""></a>
+                <a class="navbar-brand" href="./index.php"><img class="logo-insectopedia" src="./assets/img/logo-text/insectopedia/insectopedia-highres-logo-color.png" alt="Image not found"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,9 +39,9 @@
                             </a>
 
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Projet</a></li>
+                                <li><a class="dropdown-item" href="./pages/a-propos/projet.php">Projet</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">CKX</a></li>
+                                <li><a class="dropdown-item" href="#">Formation</a></li>
                             </ul>
                         </li>
 
@@ -77,13 +77,14 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Rechercher</button>
                     </form>
+
+                    <p class="mb-2 mb-lg-0">Bienvenue <?php print($_SESSION['nomUtilisateurice']);?></p>
                 </div>
             </div>
         </nav>
-        <div class="logo">
-            <img src="./assets/img/logo/color/insectopedia-high-resolution-logo-transparent.png" alt="Image not found">
 
-            <h2 class="m-2">Bienvenue <?php print($_SESSION['nomUtilisateurice']);?></h2>
+        <div class="logo">
+            <img src="./assets/img/logo-text/slogan/insectopedia-highres-logo-transparent-ftcolor.png" alt="Image not found">
         </div>
     </header>
 
@@ -137,7 +138,7 @@
         <div>
             <div class="column">
                 <div>
-                    <img src="./assets/img/logo/white/insectopedia-high-resolution-logo-white-transparent.png" alt="">
+                    <img src="./assets/img/logo-text/insectopedia/insectopedia-highres-logo-white.png" alt="">
                 </div>
 
                 <div>

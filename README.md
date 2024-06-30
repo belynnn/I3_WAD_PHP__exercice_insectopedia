@@ -100,3 +100,6 @@
     * ✅ Ajout du include footer sur chaque page
     * ✅ Ajout de la balise header avec l'include de la navbar
     * ✅ Ajout de l'action "Se déconnecter" dans la navbar
+    * ✅ Refacto img logo
+    * ✅ Ajout page Projet
+    * ✅ Correction d'un conflit dans certain link header php
