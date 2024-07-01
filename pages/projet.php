@@ -1,12 +1,12 @@
-<?php include("./../../includes/doctype.php") ?>
+<?php include("../includes/doctype.php") ?>
 
 <head>
-    <?php include("./../../includes/head.php") ?>
+    <?php include("../includes/head.php") ?>
 </head>
 
 <body>
     <header>
-        <?php include("./../../includes/nav.php") ?>
+        <?php include("../includes/nav.php") ?>
         <br><br><br>
         <h1>Insectopedia</h1>
         <h2>(re)découvrir nos petits insectes</h2>
@@ -37,7 +37,7 @@
     </main>
 
     <footer>
-
+        <?php include("../includes/footer.php") ?>
     </footer>
 </body>
 </html>

@@ -17,7 +17,7 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../pages/a-propos/projet.php">Projet</a></li>
+                        <li><a class="dropdown-item" href="../pages/projet.php">Projet</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Formation</a></li>
                     </ul>

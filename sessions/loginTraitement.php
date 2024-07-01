@@ -4,14 +4,14 @@
 
 <head>
     <?php
-        include("./includes/head.php");
+        include("../includes/head.php");
     ?>
 </head>
 
 <body>
     <header>
         <?php
-            include("./includes/nav.php");
+            include("../includes/nav.php");
         ?>
     </header>
 
