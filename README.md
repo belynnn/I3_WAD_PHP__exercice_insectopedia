@@ -18,6 +18,7 @@
         * ✅ Déplacer la balise h2 dans le header
         * ✅ Afficher les derniers ajouts
         * 🟨 Style : Modifier les noms de class CSS pour afficher les derniers insectes ajouter en base de données
+        * ✅ Page d'accueil disponible même quand pas connecté ! - Merci Arcure ♥
 
 * ##### 🟨 Gérer les includes
     * ✅ Créer le fichier ./includes/doctype.php

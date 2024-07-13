@@ -15,11 +15,10 @@
 </head>
 
 <body>
+    <?php
+        session_start();
+    ?>
     <header>
-        <?php
-            include("./sessions/checkSession.php");
-        ?>
-
         <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.php"><img class="logo-insectopedia" src="./assets/img/logo-text/insectopedia/insectopedia-highres-logo-color.png" alt="Image not found"></a>
@@ -78,7 +77,11 @@
                         <button class="btn btn-outline-success" type="submit">Rechercher</button>
                     </form>
 
-                    <p class="mb-2 mb-lg-0">Bienvenue <?php print($_SESSION['nomUtilisateurice']);?></p>
+                    <?php
+                        if (!empty($_SESSION['nomUtilisateurice'])) {
+                            print('<p class="mb-2 mb-lg-0">Bienvenue '.$_SESSION['nomUtilisateurice'].'</p>');
+                        }
+                    ?>
                 </div>
             </div>
         </nav>
@@ -87,7 +90,6 @@
             <img src="./assets/img/logo-text/slogan/insectopedia-highres-logo-transparent-ftcolor.png" alt="Image not found">
         </div>
     </header>
-
     <main>
         <?php
             // 1. Se connecter à la base de données
